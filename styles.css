@@ -6,7 +6,13 @@ body{
     height: 100%;
     margin: 0;
     padding: 0;
+    min-width: 744px;
+    min-height: 815px;
 
+}
+
+h1, h2, h3, h4, h5{
+    font-family: "Helvetica Neue";
 }
 .container {
   background:url("img/Whistler.jpg");
@@ -36,10 +42,12 @@ body{
 }
 
 .info{
-
+    margin-top: 3%;
     height: 100%;
-
+    width: 66%;
     height: inherit;
+    float: left;
+
 }
 
 .timeline #timeline-line{
@@ -57,22 +65,67 @@ body{
     font-size: 36px;
     margin: 0;
     color: #E0E4F4;
-    font-family: "Helvetica Neue";
+
     font-weight: bold;
 }
 .timeline-event ul{
     padding: none;
     margin: none;
+    margin: 20px 0px 50px 0px;
+    padding: 0px 0px 0px 18px;
 }
 
 .timeline-event ul li{
     display: block;
+    margin-bottom: 10%;
 }
 
 .timeline-event ul li h5{
     color: #E0E4F4;
     margin: 0;
-	font-family: "Helvetica Neue";
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 300;
+}
+
+.introduction{
+    float: left;
+
+}
+
+.social-media-bar{
+    float: right;
+}
+
+.social-media-token{
+    height: 60px;
+    width: 60px;
+	background-color: rgba(20,33,52,0.8);
+    margin-bottom: 30px;
+    border-radius: 50%;
+}
+
+.social-media-token:hover{
+	background-color: #6B7690;
+}
+
+.social-media-token:active{
+	background-color: #6B7690;
+}
+
+.introduction{
+    font-size: 28px;
+    color: #142134;
+    margin-left: 15%;
+}
+
+.introduction h1{
+    margin: 0px 0px 0px 0px;
+}
+
+.hey{
+    font-weight: 300;
+}
+
+.name{
+    font-weight: bold;
 }
