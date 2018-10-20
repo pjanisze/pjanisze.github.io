@@ -38,8 +38,11 @@ h1, h2, h3, h4, h5{
     padding-top: 10%;
     padding-left: 10%;
     display: flex;
+    z-index: 100;
 
 }
+
+
 
 .info{
     margin-top: 3%;
@@ -50,15 +53,12 @@ h1, h2, h3, h4, h5{
 
 }
 
-.timeline #timeline-line{
 
-    vertical-align: top;
-    height: 100%;
-}
 .timeline #timeline-text{
-
+    border-left: 3px solid #E0E4F4;
     vertical-align: top;
     height: 100%;
+    padding-left: 20px;
 }
 
 .timeline-event h3{
@@ -87,6 +87,12 @@ h1, h2, h3, h4, h5{
     font-weight: 300;
 }
 
+.timeline-event ul li a{
+    color: #E0E4F4;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .introduction{
     float: left;
 
@@ -102,6 +108,9 @@ h1, h2, h3, h4, h5{
 	background-color: rgba(20,33,52,0.8);
     margin-bottom: 30px;
     border-radius: 50%;
+    position: relative;
+    display: block;
+
 }
 
 .social-media-token:hover{
@@ -110,6 +119,13 @@ h1, h2, h3, h4, h5{
 
 .social-media-token:active{
 	background-color: #6B7690;
+}
+
+.social-media-token img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .introduction{

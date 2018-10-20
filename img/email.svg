@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="22px" viewBox="0 0 28 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Email Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Paul's-website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.8">
+        <g id="Desktop-HD" transform="translate(-1314.000000, -325.000000)" fill="#E0E4F4" fill-rule="nonzero">
+            <g id="Icons" transform="translate(1288.000000, 56.000000)">
+                <path d="M51.2,269 C52.74,269 54,270.2375 54,271.75 L54,288.25 C54,289.7625 52.74,291 51.2,291 L28.8,291 C27.26,291 26,289.7625 26,288.25 L26.014,271.75 C26.014,270.2375 27.26,269 28.8,269 L51.2,269 Z M51,274.857143 L51,272 L40,279.142857 L29,272 L29,274.857143 L40,282 L51,274.857143 Z" id="Email-Icon"></path>
+            </g>
+        </g>
+    </g>
+</svg>
