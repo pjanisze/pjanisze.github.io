@@ -1,45 +1,46 @@
+
 html{
-
+    min-width: 850px;
+    min-height: 800px;
 }
-
 body{
-    height: 100%;
+
     margin: 0;
     padding: 0;
-    min-width: 744px;
-    min-height: 815px;
+    min-width: 850px;
+    min-height: 800px;
+    background:url("img/Whistler.jpg");
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-position: center center;
+    background-clip: border-box;
+    background-origin: padding-box;
+    -moz-background-size: cover;
+    background-size: cover;
 
 }
 
 h1, h2, h3, h4, h5{
     font-family: "Helvetica Neue";
 }
-.container {
-  background:url("img/Whistler.jpg");
-  background-repeat: no-repeat;
-  background-attachment: local;
-  background-position: center center;
-  background-clip: border-box;
-  background-origin: padding-box;
-  -moz-background-size: cover;
-  background-size: cover;
-}
+
 
 
 .side{
-    float: left;
+    display: flex;
+
+    position: absolute;
+    left: 0;
+    height: inherit;
     background-color: rgba(20,33,52,0.8);
-    height: -webkit-fill-available;
-    height: -moz-fill-available;
+    min-height: 800px;
     width: 33%;
+    min-width: 340px;
+
 }
 
-.timeline{
-    padding-top: 10%;
-    padding-left: 10%;
+.content{
     display: flex;
-    z-index: 100;
-
 }
 
 
@@ -49,45 +50,57 @@ h1, h2, h3, h4, h5{
     height: 100%;
     width: 66%;
     height: inherit;
-    float: left;
+    float: right;
+    padding-right: 15px;
+    min-width: 550px
 
 }
 
-
-.timeline #timeline-text{
-    border-left: 3px solid #E0E4F4;
-    vertical-align: top;
-    height: 100%;
-    padding-left: 20px;
+.timeline {
+  border-left: 4px solid #E0E4F4;
+  margin: 0px 0px 0px 70px;
+  position: relative;
+  padding: 60px 10px 50px 50px;
 }
-
-.timeline-event h3{
+.timeline h3 {
     font-size: 36px;
     margin: 0;
     color: #E0E4F4;
 
     font-weight: bold;
 }
-.timeline-event ul{
-    padding: none;
-    margin: none;
-    margin: 20px 0px 50px 0px;
-    padding: 0px 0px 0px 18px;
-}
 
-.timeline-event ul li{
-    display: block;
-    margin-bottom: 10%;
-}
-
-.timeline-event ul li h5{
+.timeline h5 {
     color: #E0E4F4;
     margin: 0;
     font-size: 20px;
     font-weight: 300;
 }
 
-.timeline-event ul li a{
+.timeline .event {
+    position: relative;
+}
+
+
+.timeline .event:after {
+  left: calc((50px + 4px + (20px * 0.40)) * -1);
+  background: #E0E4F4;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  content: "";
+  top: 10px;
+  position: absolute;
+  display: block;
+
+}
+
+.event ul li{
+    display: block;
+    margin-bottom: 10%;
+}
+
+.event ul li a{
     color: #E0E4F4;
     cursor: pointer;
     text-decoration: underline;
@@ -100,6 +113,7 @@ h1, h2, h3, h4, h5{
 
 .social-media-bar{
     float: right;
+    padding-right: 20px;
 }
 
 .social-media-token{
