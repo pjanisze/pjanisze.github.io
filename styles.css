@@ -3,7 +3,7 @@ html{
     min-width: 850px;
     min-height: 800px;
 }
-body{
+body.computer{
 
     margin: 0;
     padding: 0;
@@ -148,7 +148,7 @@ h1, h2, h3, h4, h5{
     margin-left: 15%;
 }
 
-.introduction h1{
+.introduction h1, .mobile-introduction h1{
     margin: 0px 0px 0px 0px;
 }
 
@@ -158,4 +158,118 @@ h1, h2, h3, h4, h5{
 
 .name{
     font-weight: bold;
+}
+/* -------------
+MOBILE STYLES
+------------- */
+
+body.mobile{
+    position: relative;
+    margin: 0;
+}
+.mobile-info{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    background:url("img/Whistler-mobile.jpg");
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-position: center center;
+    background-clip: border-box;
+    background-origin: padding-box;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+.mobile-info-content{
+    padding: 12vw 0 12vw 12vw;
+}
+
+
+.mobile-timeline-wrapper{
+    width: 100%;
+    height: auto;
+    background-color: rgba(20,33,52,1);
+
+}
+
+.mobile-introduction{
+    font-size: 28px;
+    color: #142134;
+
+}
+
+.mobile-introduction .hey{
+    font-size: 5vw;
+}
+
+.mobile-introduction .name{
+    font-size: 6vw;
+}
+
+.mobile-social-media{
+    margin: 5% 0 0;
+}
+
+
+.mobile-social-media .row{
+    margin-bottom: 4vw;
+}
+
+.mobile-social-media .social-media-token{
+    margin: 0 4vw 0 0;
+    display: inline-block;
+    height: 9vw;
+    width: 9vw;
+
+}
+.mobile-social-media .social-media-token img{
+    height: 3vw;
+    width: 3vw;
+}
+
+
+.mobile-timeline-wrapper .timeline {
+  border-left: 0.5vw solid #E0E4F4;
+  margin: 0px 0px 0px 12vw;
+  position: relative;
+  padding: 5vw 1vw 5vw 5vw;
+}
+
+.mobile-timeline-wrapper .timeline h3 {
+    font-size: 5vw;
+    margin: 0;
+    color: #E0E4F4;
+
+    font-weight: bold;
+}
+
+.mobile-timeline-wrapper .timeline h5 {
+    color: #E0E4F4;
+    margin: 0;
+    font-size: 4.5vw;
+    font-weight: 300;
+}
+
+.mobile-timeline-wrapper .timeline .event {
+    position: relative;
+}
+
+
+.mobile-timeline-wrapper .timeline .event:after {
+  left: calc((5vw + 0.1vw + (3vw * 0.55)) * -1);
+  background: #E0E4F4;
+  border-radius: 50%;
+  height: 3vw;
+  width: 3vw;
+  content: "";
+  top: 10px;
+  position: absolute;
+  display: block;
+
+}
+
+.mobile-timeline-wrapper .event ul li{
+    display: block;
+    margin-bottom: 5vw;
 }

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="mobile">
+    <script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.3/mobile-detect.min.js"></script>
+    <script>
+        var md = new MobileDetect(window.navigator.userAgent);
+        if (!(md.mobile() || md.tablet())) {
+            document.location.href = 'index.html';
+        }
+    </script>
+
+    <div class="mobile-info">
+        <div class="mobile-info-content">
+            <div class="mobile-introduction">
+                <h1 class="hey"> Hey, I'm </h2>
+                <h1 class="name">Paul</h2>
+                <h1 class="name">Janiszewski.</h2>
+            </div>
+            <div class="mobile-social-media">
+                <div class="row">
+                    <a class="social-media-token" href="https://www.linkedin.com/in/paul-janiszewski" target="_blank">
+                        <img src="img/linkedin.svg">
+                    </a>
+                    <a class="social-media-token" href="https://www.github.com/pjanisze" target="_blank">
+                        <img src="img/github.svg">
+                    </a>
+                </div>
+                <div class="row">
+                    <a class="social-media-token" href="mailto:paul.janiszewski@uwaterloo.ca">
+                        <img src="img/email.svg">
+                    </a>
+                    <a class="social-media-token" href="files/Paul_DevOps.pdf" target="_blank">
+                        <img src="img/resume.svg">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-timeline-wrapper">
+        <div class=timeline>
+            <div class="event" id="past">
+                <h3> Past </h3>
+                <ul>
+                    <li> <h5>Internships @ Bombardier, Gradeslam, Oracle</h5></li>
+                </ul>
+            </div>
+            <div class="event" id="present">
+                <h3> Present </h3>
+                <ul>
+                    <li> <h5>University of Waterloo Software Engineering</h5></li>
+                    <li> <h5>Site Reliability Engineering Intern @ Axiom Zen</h5></li>
+                    <li> <h5>Currently in Vancouver, BC</h5></li>
+                </ul>
+            </div>
+            <div class="event" id="future">
+                <h3> Future </h3>
+                <ul>
+                    <li> <h5>Let’s work together! Check out my <a href="files/Paul_DevOps.pdf" target="_blank">resume</a>.</h5></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
